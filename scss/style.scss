@@ -1,0 +1,15 @@
+@use "custom";
+
+//import components
+
+@use "components/animation";
+@use "components/buttons";
+@use "components/icons";
+
+//import sections
+
+@use "sections/nav";
+@use "sections/backgroundAnimation";
+@use "sections/application";
+@use "sections/salesPitch";
+@use "sections/footer";

@@ -1,0 +1,66 @@
+@use "../custom" as *;
+
+.row {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  background-color: $primary;
+
+  .applications {
+    margin: 0;
+    padding: 1rem 0;
+    width: 100%;
+    height: 100%;
+    .images {
+      padding: 0.4rem;
+      width: 100%;
+      background: #231546;
+
+      box-sizing: content-box;
+      text-align: center;
+      img {
+        border-radius: 30px;
+        margin-top: 2rem;
+        width: 75%;
+      }
+      h1 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+      }
+      p {
+        font-size: 0.6rem;
+      }
+
+      &:hover {
+        background-color: green;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    .applications {
+      .images {
+        h1 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: 0.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .row {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

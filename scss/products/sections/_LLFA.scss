@@ -1,0 +1,30 @@
+@use "../customProducts" as *;
+
+.LLFA {
+  width: 100%;
+  background: $primary;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em 25%;
+  text-align: center;
+
+  .tape {
+    background-color: #231546 !important;
+    width: 200px;
+    margin: 0.5rem auto;
+    border-radius: 10px;
+    padding: 0.7em 2em;
+    align-self: center;
+    color: white;
+    &:hover {
+      background-color: green !important;
+      color: black !important;
+    }
+
+    p {
+      margin: auto;
+      font-size: large;
+      word-spacing: 0;
+    }
+  }
+}

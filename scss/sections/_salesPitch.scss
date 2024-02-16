@@ -1,0 +1,52 @@
+@use "../custom" as *;
+
+.container-fluid {
+  background: #231546;
+  text-align: center;
+  padding: 1rem;
+}
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+.navbar-text {
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
+.never_Inline {
+  display: inline;
+  font-size: 3rem;
+  width: 1.5rem;
+  color: white;
+  text-align: center;
+  &:hover {
+    color: green;
+    cursor: pointer;
+  }
+}
+
+.para {
+  display: none;
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.open {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .never_Inline {
+    font-size: 2 rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-fluid {
+    padding: 2rem 1rem;
+  }
+  .never_Inline {
+    font-size: 1rem;
+  }
+}

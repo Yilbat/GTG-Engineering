@@ -1,0 +1,11 @@
+@use "../customProducts" as *;
+
+.fa {
+  margin-right: 0.3rem;
+  margin-bottom: 1rem;
+  &:hover {
+    color: green;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}

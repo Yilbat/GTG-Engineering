@@ -1,0 +1,18 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assests"
+    },
+  "author": "TG",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.70.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "font-awesome": "^4.7.0"
+  }
+}

@@ -1,0 +1,87 @@
+@use "../custom" as *;
+
+.footer {
+  display: grid;
+  grid-template-columns: 40% 20% 40%;
+  background: #231546;
+
+  padding: 1rem 3rem;
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    display: inline;
+  }
+  .contactUS {
+    div {
+      display: flex;
+    }
+  }
+
+  .categories {
+    ol {
+      list-style-type: none;
+      li {
+        margin: 0.5rem 0;
+        &:hover {
+          color: green;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    h1 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.7rem;
+    }
+
+    .Myth_IT {
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .footer {
+    display: block;
+    padding-left: 2rem;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+    .contactUS {
+      margin-bottom: 2rem;
+    }
+
+    .categories {
+      padding-top: 2rem;
+
+      ol {
+        margin: 0 0 3rem 0;
+
+        padding: 0;
+      }
+    }
+  }
+}

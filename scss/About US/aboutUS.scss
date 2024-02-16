@@ -1,0 +1,10 @@
+@use "./customAboutUs";
+
+// import components
+
+@use "./components/icons";
+
+//import sections
+@use "./sections/body";
+@use "./sections/navSection";
+@use "./sections/footer";

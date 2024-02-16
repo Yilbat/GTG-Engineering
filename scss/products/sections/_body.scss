@@ -1,0 +1,26 @@
+@use "../customProducts" as *;
+
+.About_Us {
+  background: #231546;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 1rem.5;
+  }
+  p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 700px) {
+  .About_Us {
+    padding: 2rem;
+    p {
+      text-align: left;
+    }
+  }
+}

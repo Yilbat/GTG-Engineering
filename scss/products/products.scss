@@ -1,0 +1,12 @@
+@use "./customProducts";
+
+// import components
+
+@use "./components/icons";
+
+//import sections
+@use "./sections/body";
+@use "./sections/navSection";
+@use "./sections/footer";
+@use "./sections/products";
+@use "./sections/LLFA";

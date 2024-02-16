@@ -1,0 +1,48 @@
+@use "../custom" as *;
+
+.intro {
+  width: 100%;
+  height: 500px;
+  //   border: 5px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+// Define images
+$image1: url("../image/background/electricity.png");
+$image2: url("../image/background/gtg.png");
+$image3: url("../image/background/plumbing.png");
+
+// Define mixin for background transition
+@mixin bg-transition($images, $duration, $ease, $contrast) {
+  background-size: cover;
+  background-position: center;
+  animation: bg-transition $duration $ease infinite;
+
+  @keyframes bg-transition {
+    0%,
+    100% {
+      background-image: $image1; // Start and end with the second image
+    }
+    25% {
+      background-image: $image2; // Stay on the second image
+    }
+    50% {
+      background-image: $image3; // Transition to the third image
+    }
+    75% {
+      background-image: $image3; // Stay on the third image
+    }
+  }
+  filter: contrast($contrast);
+}
+
+.intro {
+  @include bg-transition(
+    ($image1, $image2, $image3),
+    8s,
+    // 2s per image with 3 images in total
+    ease-in-out,
+    0.7
+  );
+}
